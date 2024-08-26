@@ -1,22 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Dashboard from '../Dashboard/Dashboard';
-import Preferences from '../Preferences/Preferences';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard';
+import Preferences from './components/Preferences/Preferences.js';
 
 function App() {
   return (
     <div className="wrapper">
       <h1>Application</h1>
       <BrowserRouter>
-        <Switch>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/preferences">
-            <Preferences />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />}/>
+          <Route path="/preferences" element={<Preferences />}/>
+        </Routes>
       </BrowserRouter>
     </div>
   );
