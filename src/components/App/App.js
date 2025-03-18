@@ -7,7 +7,6 @@ import Preferences from '../Preferences/Preferences.js';
 import useToken from './UseToken';
 
 function App() {
-  //const [token, setToken] = useState();
   const { token, setToken } = useToken();
 
   if(!token) {
