@@ -9,3 +9,30 @@ This project is a training exercise designed to help me learn and implement auth
 - **User Workflow Implementation**: Learn how to provide a smooth user experience by allowing users to log in and continue without being redirected to a dedicated login page.
 
 This project is to learn web application security, and showcases my progress in building secure, user-friendly applications.
+
+## How to Run the Application
+
+Follow these steps to get the application up and running:
+
+#### 1. **Clone the Repository**
+```
+   git clone https://github.com/your-username/react-auth-training.git
+   cd react-auth-training
+```
+#### 2. **Install Dependencies**
+```
+npm install
+```
+#### 3. **Start the Development Server**
+```
+npm run dev
+```
+The application should now be running at http://localhost:3000/.
+
+#### 4. **Testing Authentication**
+
+- To test authentication with an already set token, modify UseToken.js.
+
+- Change sessionStorage to localStorage in the file to observe the difference.
+
+- Restart the application and verify how the token is stored and retrieved.
